@@ -137,7 +137,7 @@ const handleOpen = async (jobId) => {
                 color="text.secondary"
                 gutterBottom
               >
-                {job.company} | {job.type} | {job.location} | {job.description}
+                {job.company} | {job.type} | {job.location} 
               </Typography>
               <Typography variant="body2" mb={2}>
                 Posted On: {new Date(job.createdAt).toLocaleDateString('en-IN')}
