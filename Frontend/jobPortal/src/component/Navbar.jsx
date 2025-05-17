@@ -30,7 +30,7 @@ function Navbar(props) {
   };
 
   const handleNavClick = (item) => {
-    const route = item.toLowerCase().replace(' ', '-'); // e.g., "Post Job" → "post-job"
+    const route = item.toLowerCase().replace(' ', '-'); 
     navigate(`/${route}`);
   };
 

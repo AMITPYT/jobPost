@@ -1,4 +1,3 @@
-// components/Home.js
 
 import React, { useState, useEffect } from 'react';
 import {
@@ -70,7 +69,7 @@ const handleOpen = async (jobId) => {
         Job Postings
       </Typography>
 
-      {/* Search Fields */}
+
       <Stack
         direction={{ xs: 'column', sm: 'row' }}
         spacing={2}
@@ -112,7 +111,6 @@ const handleOpen = async (jobId) => {
         />
       </Stack>
 
-      {/* Job List */}
       <Stack spacing={3}>
         {jobs.length ? (
           jobs.map((job) => (
@@ -153,7 +151,6 @@ const handleOpen = async (jobId) => {
         )}
       </Stack>
 
-      {/* Modal */}
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
         <DialogTitle>{selectedJob?.title}</DialogTitle>
         <DialogContent dividers>
