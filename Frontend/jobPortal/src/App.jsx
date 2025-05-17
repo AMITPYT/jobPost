@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './component/navbar';
+import Navbar from './component/Navbar';
 import PostJob from './pages/PostJob'; 
 import { Box } from '@mui/material';
 import Home from './pages/Home'; 
