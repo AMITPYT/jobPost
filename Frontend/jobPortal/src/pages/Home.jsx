@@ -137,7 +137,7 @@ const handleOpen = async (jobId) => {
                 color="text.secondary"
                 gutterBottom
               >
-                {job.company} | {job.type} | {job.location}
+                {job.company} | {job.type} | {job.location} | {job.description}
               </Typography>
               <Typography variant="body2" mb={2}>
                 Posted On: {new Date(job.createdAt).toLocaleDateString('en-IN')}
@@ -164,7 +164,7 @@ const handleOpen = async (jobId) => {
             Location: {selectedJob?.location}
           </Typography>
           <Typography variant="body1" mt={2}>
-            {selectedJob?.description}
+            Description:{selectedJob?.description}
           </Typography>
           <Typography
             variant="caption"
