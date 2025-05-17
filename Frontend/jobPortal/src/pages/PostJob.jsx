@@ -18,6 +18,7 @@ const PostJob = () => {
       location: '',
       description: '',
     },
+    validationSchema: jobValidationSchema,
     onSubmit: async (values, { resetForm }) => {
       try {
         await postJob(values); 
